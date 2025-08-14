@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-tr from-indigo-600 to-purple-600 min-h-screen flex items-center justify-center font-['Roboto']">
+
+  <div class="bg-white rounded-3xl shadow-2xl p-10 max-w-2xl w-full">
+    <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">My To-Do List 📝</h1>
+
+    <div class="flex gap-4 mb-6">
+      <input id="taskInput" type="text" placeholder="Add a new task..." class="flex-1 px-4 py-3 border rounded-xl text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400">
+      <input id="taskDate" type="datetime-local" class="px-3 py-3 border rounded-xl text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400">
+      <button onclick="addTask()" class="bg-indigo-500 text-white px-6 py-3 rounded-xl hover:bg-indigo-600">Add</button>
+    </div>
+
+    <ul id="taskList" class="space-y-4">
+      <!-- Tasks will appear here -->
+    </ul>
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>

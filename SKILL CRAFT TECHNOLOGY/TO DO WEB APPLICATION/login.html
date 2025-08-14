@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KL University ERP</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background: #fff;
+    }
+
+    .header {
+      background-color: #a0171a;
+      color: white;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .center-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 10px;
+      gap: 50px;
+    }
+
+    .circle-container {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle-container img {
+      width: 80px;
+    }
+
+    .circle-item {
+      position: absolute;
+      text-align: center;
+      font-weight: bold;
+      width: 100px;
+    }
+
+    /* Positioning the circular items */
+    .circle-item:nth-child(1) { top: 0%; left: 50%; transform: translate(-50%, -50%); }
+    .circle-item:nth-child(2) { top: 15%; left: 85%; transform: translate(-50%, -50%); }
+    .circle-item:nth-child(3) { top: 50%; left: 100%; transform: translate(-50%, -50%); }
+    .circle-item:nth-child(4) { top: 85%; left: 85%; transform: translate(-50%, -50%); }
+    .circle-item:nth-child(5) { top: 100%; left: 50%; transform: translate(-50%, -50%); }
+    .circle-item:nth-child(6) { top: 85%; left: 15%; transform: translate(-50%, -50%); }
+    .circle-item:nth-child(7) { top: 50%; left: 0%; transform: translate(-50%, -50%); }
+    .circle-item:nth-child(8) { top: 15%; left: 15%; transform: translate(-50%, -50%); }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      font-weight: bold;
+      gap: 10px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #a0171a;
+    }
+
+    .footer {
+      background-color: #a0171a;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 50px;
+      flex-wrap: wrap;
+    }
+
+    .stat-item {
+      width: 200px;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .stat-item a {
+      color: #0047ab;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+    }
+
+    @media(max-width: 800px) {
+      .center-section {
+        flex-direction: column;
+      }
+
+      .stats {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div><b>🔒 Login</b></div>
+    <div>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat-item"><a href="#">31325</a>Journals & Conferences</div>
+    <div class="stat-item"><a href="#">14383</a>Workshops, Seminars & Lectures</div>
+    <div class="stat-item"><a href="#">1579</a>Doctoral Faculty</div>
+    <div class="stat-item"><a href="#">3780</a>Non-Teaching Staff</div>
+    <div class="stat-item"><a href="#">2178</a>Faculty (VJA)</div>
+    <div class="stat-item"><a href="#">354</a>Faculty (Hyd)</div>
+
+    <div class="stat-item"><a href="#">3591</a>Awards & Recognitions</div>
+    <div class="stat-item"><a href="#">1244</a>Projects & Consultancy</div>
+    <div class="stat-item"><a href="#">2635</a>Faculty</div>
+    <div class="stat-item"><a href="#">78845</a>Students</div>
+    <div class="stat-item"><a href="#">2992</a>Non-Teaching Staff (VJA)</div>
+    <div class="stat-item"><a href="#">545</a>Non-Teaching Staff (Hyd)</div>
+  </div>
+
+  <div class="center-section">
+    <div class="circle-container">
+      <img src="https://klh.edu.in/assets/images/logo.png" alt="KL Logo" />
+      <div class="circle-item">Exam</div>
+      <div class="circle-item">Employee</div>
+      <div class="circle-item">Payroll</div>
+      <div class="circle-item">Research</div>
+      <div class="circle-item">Leave</div>
+      <div class="circle-item">HR</div>
+      <div class="circle-item">Transport</div>
+      <div class="circle-item">OBE</div>
+    </div>
+  </div>
+
+  <div class="center-section">
+    <div class="sidebar">
+      <div>📚 Library</div>
+      <div>🎓 Academics</div>
+      <div>🏠 Hostel</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    © Copyright 2021 by K L Deemed to be University. All Rights Reserved. 📘 erp1
+  </div>
+
+</body>
+</html>
